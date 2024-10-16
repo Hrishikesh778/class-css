@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+
+        .parent{
+            width: 100%;
+            background-color: brown;
+            /* position:sticky;
+            top:50px */
+        }
+
+        .child{
+            height: 150px;
+            width: 150px;
+            background-color: aquamarine;
+            float: left;
+            margin: 10px;
+        }
+
+        #child1{
+            position:fixed;
+            bottom: 0px;
+            right: 0px ;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+           border-radius: 50%;
+           align-content: center;
+           
+        }
+
+        #child2{
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            height: 50px;
+            width: 50px;
+        }
+        .div{
+            height: 10000px;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        #child3{
+            position: absolute;
+            left: 60px;
+            top: 200px;
+        }
+        #child4{
+            position: absolute;
+            top: 40%;
+            right: 40%;
+        }
+    </style>
+</head>
+<body id="top">
+    <div class="parent">
+        <a href="#top"><div class="child" id="child1"><i class="fa-solid fa-2x fa-arrow-up"></i></div></a>
+        <div class="child" id="child2"><i class="fa-brands fa-3x fa-whatsapp"></i></div>
+        <div class="child" id="child3"></div>
+        <div class="child" id="child4"></div>
+
+    </div>
+
+    <div class="div">
+
+    </div>
+</body>
+</html>
+<!-- position : static
+position : relative
+position : absolute
+position : fixed
+position : sticky -->
