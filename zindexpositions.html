@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            .child{
+            height: 150px;
+            width: 150px;
+            background-color: aquamarine;
+            float: left;
+            margin: 10px;
+        }
+
+        #child1{
+            position: relative;
+            top: 50px;
+            border-color: rgb(10, 205, 140);
+            z-index: 1;
+        }
+        #child2{
+            position: relative;
+            top: 30px;
+            left: -50px;
+            background-color: brown;
+            z-index: 3;
+        }
+        #child3{
+            position: relative;
+            top: 80px;
+            left: -300px;
+            background-color: rgb(172, 145, 10);
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child" id="child1"></div>
+        <div class="child" id="child2"></i></div>
+        <div class="child" id="child3"></div>
+    
+
+    </div>
+</body>
+</html>
