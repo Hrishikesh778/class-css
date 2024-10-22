@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            background-color: antiquewhite;
+            width: 100%;
+            
+            display: flex;
+        }
+        .picture{
+            width:30%;
+            height: 100%;
+            background-color: brown;
+        }
+        .text{
+            width: 70%;
+        }
+        .img{
+            height: 100%;
+            width: 100%;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        @media screen and (max-width:750px) {
+
+            .parent{
+                flex-direction: column;
+            }
+
+            .picture{
+                height: 100%;
+                width: 100%;
+            }
+            .text{
+                width: 100%;
+            }
+
+            #parent2 .text{
+                order: 1;
+                
+            }
+        }
+
+           
+    </style>
+</head>
+<body>
+    <div class="parent">
+     <div class="picture"><img class="img" src="images/minicop.jpg"></div>
+     <div class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non ipsa eos quo sequi doloremque in porro totam odit quam sed facilis ratione, architecto amet maxime, asperiores voluptatum quas, officia impedit possimus perferendis. Dicta ducimus id natus blanditiis sunt eaque commodi, necessitatibus vero quia ipsa sed assumenda neque accusantium! Assumenda, cupiditate!</div>
+    </div>
+    <br>
+    <div class="parent" id="parent2">
+        <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium et perferendis fugiat aut tempore deleniti? Repudiandae, omnis adipisci cupiditate in non dolore voluptas laudantium. Reiciendis ipsam nemo ea ratione incidunt quibusdam facere non dolores mollitia modi laudantium eius, impedit aut consectetur id. Repellendus, vel in totam sunt quis blanditiis alias?</div>
+        <div class="picture"><img class="img" src="images/minicop.jpg"></div>
+    </div>
+</body>
+</html>
