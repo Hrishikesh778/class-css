@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link {
+            color: rgb(242, 44, 44);
+        }
+
+        a:hover {
+            color: rgb(211, 136, 37);
+        }
+
+        a:visited {
+            /* color:grey; */
+        }
+
+        a:active {
+            color: chartreuse;
+        }
+
+        /* ul li:first-child{
+           background-color: blue;
+        }
+
+        ul li:last-child{
+            background-color: brown;
+        }
+
+        ul li:nth-child(3){
+            background-color: aquamarine;
+        } */
+
+        /* ul li:nth-child(odd){
+            background-color: rgb(154, 154, 154);
+        }
+        ul li:nth-child(even){
+            background-color: rgb(70, 70, 70);
+        } */
+
+        ul li:nth-child(3n+1) {
+            background-color: chartreuse;
+        }
+
+        ul li:hover {
+            background-color: chocolate;
+        }
+
+        /* ul li:not(.pp){
+            background-color: cadetblue;
+        } */
+
+
+
+        /* pseudo elements */
+        /* p::first-line{
+            background-color: blue;
+         } */
+
+        p::first-letter {
+            font-size: 60px;
+            background-color: blue;
+        }
+
+
+        p::before {
+            content: "hi this is before content";
+            display: block;
+        }
+
+        p::after {
+            content: "hi this is after content";
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- pseudo classes -->
+    <a href="https://www.w3schools.com/css/css_pseudo_classes.asp">home</a>
+    <a href="">contact us</a>
+    <a href="">services</a>
+    <a href="">placement</a>
+    <a href="">about</a>
+
+    <br>
+
+    <ul>
+        <li class="pp">home</li>
+        <li>contact us</li>
+        <li>services</li>
+        <li>placement</li>
+        <li>about</li>
+        <li>maps</li>
+
+    </ul>
+    <br>
+    <!-- pseudo elements -->
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis vero obcaecati fugit voluptatum officiis
+        quibusdam labore magni veniam sunt nesciunt quod iure itaque natus cupiditate adipisci dolor corporis suscipit
+        ducimus porro provident numquam facere, nemo at. Alias eligendi quam, nobis odit voluptates consequuntur iste
+        tempora, neque temporibus eos voluptatem maxime!</p>
+    <br>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis vero obcaecati fugit voluptatum officiis
+        quibusdam labore magni veniam sunt nesciunt quod iure itaque natus cupiditate adipisci dolor corporis suscipit
+        ducimus porro provident numquam facere, nemo at. Alias eligendi quam, nobis odit voluptates consequuntur iste
+        tempora, neque temporibus eos voluptatem maxime!</p>
+    <br>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis vero obcaecati fugit voluptatum officiis
+        quibusdam labore magni veniam sunt nesciunt quod iure itaque natus cupiditate adipisci dolor corporis suscipit
+        ducimus porro provident numquam facere, nemo at. Alias eligendi quam, nobis odit voluptates consequuntur iste
+        tempora, neque temporibus eos voluptatem maxime!</p>
+</body>
+
+</html>
