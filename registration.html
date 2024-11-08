@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .main {
+            height: 100vh;
+            width: 100%;
+            background-color: rgb(56, 125, 189);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        #logbox {
+            /* height: 550px; */
+            width: 600px;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            background-color: rgb(255, 255, 255);
+            box-sizing: border-box;
+            /* border-radius: 10px;  */
+        }
+
+        h3 {
+            align-self: center;
+
+            color: rgb(52, 132, 179);
+        }
+
+        .form {
+            width: 90%;
+            justify-self: center;
+
+        }
+
+        #submit {
+            height: 40px;
+            width: 100%;
+            background-color: rgb(52, 132, 179);
+            color: aliceblue;
+            border: 0px;
+
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 90%;
+            height: 40px;
+            /* padding: 12px 20px; */
+            /* margin: 8px; */
+            /* display: inline-block;
+        border: 1px solid #ccc; */
+            box-sizing: border-box;
+        }
+
+        /* input[type=radio],label{
+            margin-right:20px;
+
+        } */
+
+        .inmain {
+            display: flex;
+            margin-top: 15px;
+        }
+
+        .genmain {
+            display: flex;
+            margin-top: 15px;
+        }
+
+        input {
+            margin-left: 0px;
+        }
+
+        .div {
+            /* margin: 5px; */
+            width: 100%;
+        }
+
+        @media screen and (max-width:500px){
+            .inmain {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+            }
+
+            .genmain {
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+        }
+        /* #logbox {
+
+            display: flex;
+            flex-direction: column;
+            margin-top: 15px;
+        } */
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div id="logbox">
+
+            <form action="" class="form">
+                <br>
+                <h3>Registration</h3>
+                <br>
+                <div class="inmain">
+                    <div class="div">
+                        <b><label for="">Full Name</label></b><br>
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="div">
+                        <b><label for="">Username</label></b><br>
+                        <input type="text" placeholder="Enter your username">
+                    </div>
+                </div>
+                <div class="inmain">
+                    <div class="div">
+                        <b><label for="">Email</label></b><br>
+                        <input type="text" placeholder="Enter your email">
+                    </div>
+                    <div class="div">
+                        <b><label for="">Phone Number</label></b><br>
+                        <input type="text" placeholder="Enter your number">
+                    </div>
+                </div>
+                <div class="inmain">
+                    <div class="div">
+                        <b><label for="">Password</label></b><br>
+                        <input type="password" placeholder="Enter your password">
+                    </div>
+                    <div class="div">
+                        <b><label for="">Confirm Password</label></b><br>
+                        <input type="password" placeholder="Confirm your number">
+                    </div>
+                </div>
+
+                <div class="genmain">
+                    <b><label for="">Gender</label></b><br>
+                </div>
+                <div class="genmain">
+                    
+                    <div class="div">
+                        <input type="radio" name="checkbox" id="male"><label for="male">Male</label>
+                    </div>
+                    <div class="div">
+                        <input type="radio" name="checkbox" id="female"><label for="female">Female</label>
+                    </div>
+                    <div class="div">
+                        <input type="radio" name="checkbox" id="other"><label for="other">Other</label>
+                    </div>
+                   
+                </div>
+
+                <div class="genmain">
+                    <input type="submit" id="submit" value="Register">
+                </div>
+                
+                <br>
+                <br>
+                <br>
+
+         
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
