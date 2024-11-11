@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .main {
+            height: 100vh;
+            width: 100%;
+            /* background-color: rgb(56, 125, 189); */
+            background: linear-gradient(to right, #4e54c8, #8f94fb);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+        }
+        .profilebox{
+            height: 400px;
+            width: 250px;
+            /* display: flex; */
+
+            justify-content: center;
+            align-self: center;
+            background-color: rgb(255, 255, 255);    
+            box-sizing: border-box;         
+            border-radius: 10px; 
+        }
+        .profiled{
+            height: 400px;
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-self: center;
+            background-color: rgb(255, 255, 255);    
+            box-sizing: border-box;         
+            border-radius: 10px; 
+            padding: 20px;
+        }
+        .sep{
+            width: 5%;
+        }
+        .profilepic{
+            height: 60%;
+            width: 100%;
+        }
+
+        .prodetail{
+            width: 100%;
+            text-align: center;
+           
+        }
+        .profilename{
+            height: 20%;
+            justify-content: flex-start;
+            text-align: center;
+        }
+
+        .prodetail2{
+            height: 60%;
+            width:70%;
+            justify-self: center;
+            align-self: center;
+            /* background-color: #4e54c8; */
+        }
+        .profilend{
+            height: 20%;
+            justify-content: flex-start;
+            text-align: center;
+        }
+
+        @media screen and (max-width:750px){
+            .main{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .profilebox{
+           height: auto;
+            width: 100%;
+            }
+            .profiled{
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .sep{
+                width: 100%;
+            }
+            .profilebox{
+                margin-top:20px;
+                margin-bottom: 20px;
+            }
+
+            .profilepic{
+                height: fit-content;
+                width: fit-content;
+                object-fit: fill;
+                align-self: center;
+                justify-self: center;
+            }
+
+
+            .profilename{
+            height:auto;
+            justify-content: flex-start;
+            text-align: center;
+        }
+
+        .prodetail2{
+            height: auto;
+            width:70%;
+            justify-self: center;
+            align-self: center;
+            /* background-color: #4e54c8; */
+        }
+        .profilend{
+            height: auto;
+            justify-content: flex-start;
+            text-align: center;
+        }
+
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="profilebox">
+            <div class="profilepic">
+                <img src="images\81009096.png" height="100%" width="100%">
+            </div>
+            <div class="prodetail">
+                <h3>Hrishikesh Bhoir</h3><br>
+                <br>
+                Java Full Stack Developer
+            </div>
+          
+
+        </div>
+        <div class="sep">
+
+        </div>
+        <div class="profiled">
+            
+            <div class="profilename">
+                <h3>Hrishikesh Bhoir</h3><br>
+            </div>
+
+            <div class="prodetail2">
+                <label for="">Name:</label> Hrishikesh Bhoir
+                <br>
+                <br>
+                <label for="">Age:</label> 27
+                <br>
+                <br>
+                <label for="">Mobile:</label> 8149264076
+                <br>
+                <br>
+                <label for="">Email:</label> hrishi778@gmail.com
+                <br>
+                <br>
+                <label for="">Address:</label> Ramchandra smurti,Varap,Kalyan.
+               <!-- <br>
+               <br> -->
+            </div>
+
+            <div class="profilend">
+                <h3>Made with Love By HB</h3><br>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
