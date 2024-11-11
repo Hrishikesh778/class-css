@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .firstdiv {
+            display: flex;
+            height: 80px;
+            background-color: rgb(67, 67, 81)
+        }
+
+        .logo {
+            width: 20%;
+            text-align: center;
+            align-content: center;
+            font-family: "Cedarville Cursive", cursive;
+            color: white;
+            font-size: large;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .logo2 {
+            width: 20%;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: flex-end;
+            width: 60%;
+            align-content: center;
+        }
+
+        .nav ul {
+            display: flex;
+            list-style: none;
+            align-content: center;
+            /* float: right; */
+        }
+
+        .nav ul li {
+            align-content: center;
+            margin: 5%;
+        }
+
+        a:link {
+            color: azure;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: blanchedalmond;
+        }
+
+        /* navbar finished */
+
+        .seconddiv {
+            width: 100%;
+            /* height: 300px; */
+            background-color: rgb(208, 208, 208);
+            display: flex;
+            padding: 40px;
+        }
+
+        .textarea1 {
+            width: 40%;
+
+            /* box-sizing: border-box; */
+        }
+
+        .photoarea1 {
+            height: 200px;
+            width: 60%;
+
+        }
+
+        button {
+            background-color: orange;
+
+        }
+
+        /* second div end */
+
+        .thirddiv {
+            width: 100%;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 40px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        /* third div end */
+
+        .forthdiv {
+            display: flex;
+            width: 100%;
+            /* height: 400px; */
+            /* background-color: blue; */
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-top: 20px;
+            padding-bottom: 40px;
+            justify-content: space-between;
+        }
+
+        .forth1 {
+
+            width: 450px;
+            /* background-color: aqua; */
+        }
+
+        .intext {
+            width: 100%;
+        }
+
+        .inbtn {
+            background-color: orange;
+            border: 0px;
+
+        }
+
+        /* forth div end */
+        .fifthdiv {
+            display: flex;
+            width: 100%;
+            /* height: 300px; */
+            padding: 40px;
+            background-color: rgb(67, 67, 81);
+            justify-content: space-between;
+        }
+
+        .fifth1 {
+            width: 450px;
+            /* background-color: aqua; */
+            color: white;
+            text-decoration-color: white;
+        }
+
+
+        .indiv5th {
+            /* height: 50%; */
+            /* box-sizing: border-box;
+            overflow: scroll; */
+
+        }
+
+        .internaldiv {
+            display: flex;
+
+            margin-top: 10px;
+            width: 100%;
+            /* height: 33.33%; */
+            /* background-color: rgb(0, 213, 142); */
+
+        }
+
+        .i1 {
+            width: 20%;
+            /* background-color: brown; */
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .i2 {
+            width: 80%;
+            /* background-color: burlywood; */
+        }
+
+        @media screen and (max-width:830px) {
+
+            .textarea1 {
+                width: auto;
+            }
+
+            /* box-sizing: border-box; */
+
+
+            .photoarea1 {
+                height: auto;
+                width: auto;
+
+            }
+
+            .seconddiv {
+                flex-direction: column-reverse;
+            }
+
+            .forthdiv {
+                flex-direction: column;
+
+            }
+
+            .fifthdiv {
+                flex-direction: column;
+            }
+
+            .nav {
+                display: none;
+            }
+
+            .forth1 {
+                width: auto;
+                margin-top: 10%;
+            }
+
+            .fifth1 {
+                width: auto;
+                margin-top: 10%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="firstdiv">
+        <div class="logo">Bloom</div>
+        <div class="nav">
+            <ul>
+                <li id="home"><a href="#">Home</a></li>
+                <li id="about"><a href="#">About Us</a></li>
+                <li id="services"><a href="#">Services</a></li>
+                <li id="Portfolio"><a href="#">Portfolio</a></li>
+                <li id="Contact Us"><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="logo2"></div>
+    </div>
+
+    <div class="seconddiv">
+        <div class="textarea1">
+            <h2>Lorem ipsum dolor sit amet.</h2><br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus dignissimos a harum assumenda
+                accusantium, illo reprehenderit aut, quasi et itaque error amet. Eveniet ducimus, corporis maiores
+                beatae voluptatum est cum!</p>
+            <br>
+            <button>Learn More</button>
+        </div>
+        <div class="photoarea1">
+            <img src="images/minicop.jpg" alt="" width="100%" height="100%">
+        </div>
+
+    </div>
+
+    <div class="thirddiv">
+        <h1>This is heading</h1>
+    </div>
+
+    <div class="forthdiv">
+        <div class="forth1">
+            <div class="inimg"><img src="images/minicop.jpg" width="100%" height="100%></div>
+            <div class=" intext">
+                <h3>Lorem, ipsum dolor.</h3><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae laborum ad iusto iure quis<br>
+                <br>
+                <button class="inbtn">Learn More</button>
+            </div>
+
+        </div>
+        <div class="forth1">
+            <div class="inimg"><img src="images/minicop.jpg" width="100%" height="100%></div>
+            <div class=" intext">
+                <h3>Lorem, ipsum dolor.</h3><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae laborum ad iusto iure quis<br>
+                <br>
+                <button class="inbtn">Learn More</button>
+            </div>
+        </div>
+        <div class="forth1">
+            <div class="inimg"><img src="images/minicop.jpg" width="100%" height="100%></div>
+            <div class=" intext">
+                <h3>Lorem, ipsum dolor.</h3><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut recusandae laborum ad iusto iure quis<br>
+                <br>
+                <button class="inbtn">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="fifthdiv">
+
+        <div class="fifth1">
+            <h3>Latest Post</h3>
+            <br>
+            <div class="indiv5th">
+
+                <div class="internaldiv">
+                    <div class="i1"><i class="fa-solid fa-calendar-days"></i></div>
+                    <div class="i2">
+                        <b>Lorem ipsum dolor sit.</b>
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+
+                <div class="internaldiv">
+                    <div class="i1"><i class="fa-solid fa-calendar-days"></i></div>
+                    <div class="i2">
+                        <b>Lorem ipsum dolor sit.</b>
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+
+                <div class="internaldiv">
+                    <div class="i1"><i class="fa-solid fa-calendar-days"></i></div>
+                    <div class="i2">
+                        <b>Lorem ipsum dolor sit.</b>
+                        Lorem ipsum dolor sit amet.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fifth1">
+            <h3>About</h3>
+            <br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum dicta veritatis necessitatibus iste cum
+                tempore cumque modi ad voluptas in!</p>
+        </div>
+        <div class="fifth1">
+            <h3>Stay connected</h3>
+            <br>
+            <div class="internaldiv">
+                <div class="i1"><i class="fa-brands fa-x-twitter"></i></div>
+                <div class="i2">
+                    <b>X</b>
+                </div>
+            </div>
+
+            <div class="internaldiv">
+                <div class="i1"><i class="fa-solid fa-rss"></i></div>
+                <div class="i2">
+                    <b>RSS</b>
+                </div>
+            </div>
+
+            <div class="internaldiv">
+                <div class="i1"><i class="fa-brands fa-facebook"></i></div>
+                <div class="i2">
+                    <b>Facebook</b>
+
+                </div>
+            </div>
+            <div class="internaldiv">
+                <div class="i1"><i class="fa-brands fa-instagram"></i></div>
+                <div class="i2">
+                    <b>Instagram</b>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
