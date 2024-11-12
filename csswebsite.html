@@ -28,7 +28,7 @@
             align-content: center;
             font-family: "Cedarville Cursive", cursive;
             color: white;
-            font-size: large;
+            font-size: 35px !important;
             font-weight: 500;
             font-style: normal;
         }
@@ -115,11 +115,13 @@
             padding-top: 20px;
             padding-bottom: 40px;
             justify-content: space-between;
+            
         }
 
         .forth1 {
 
             width: 450px;
+            margin: 4%;
             /* background-color: aqua; */
         }
 
@@ -129,9 +131,24 @@
 
         .inbtn {
             background-color: orange;
-            border: 0px;
 
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
         }
+
+        #fourth1 {
+            margin-left: 0%;
+        }
+
+        #fourth3 {
+            margin-right: 0%;
+        }
+
 
         /* forth div end */
         .fifthdiv {
@@ -205,6 +222,14 @@
 
             }
 
+            #fourth1 {
+                margin-left: 4%;
+            }
+
+            #fourth3 {
+                margin-right: 4%;
+            }
+
             .fifthdiv {
                 flex-direction: column;
             }
@@ -216,6 +241,7 @@
             .forth1 {
                 width: auto;
                 margin-top: 10%;
+
             }
 
             .fifth1 {
@@ -248,7 +274,7 @@
                 accusantium, illo reprehenderit aut, quasi et itaque error amet. Eveniet ducimus, corporis maiores
                 beatae voluptatum est cum!</p>
             <br>
-            <button>Learn More</button>
+            <button class="inbtn">Learn More</button>
         </div>
         <div class="photoarea1">
             <img src="images/minicop.jpg" alt="" width="100%" height="100%">
@@ -261,7 +287,7 @@
     </div>
 
     <div class="forthdiv">
-        <div class="forth1">
+        <div class="forth1" id="fourth1">
             <div class="inimg"><img src="images/minicop.jpg" width="100%" height="100%></div>
             <div class=" intext">
                 <h3>Lorem, ipsum dolor.</h3><br>
@@ -271,7 +297,7 @@
             </div>
 
         </div>
-        <div class="forth1">
+        <div class="forth1" id="fourth2">
             <div class="inimg"><img src="images/minicop.jpg" width="100%" height="100%></div>
             <div class=" intext">
                 <h3>Lorem, ipsum dolor.</h3><br>
@@ -280,7 +306,7 @@
                 <button class="inbtn">Learn More</button>
             </div>
         </div>
-        <div class="forth1">
+        <div class="forth1" id="fourth3">
             <div class="inimg"><img src="images/minicop.jpg" width="100%" height="100%></div>
             <div class=" intext">
                 <h3>Lorem, ipsum dolor.</h3><br>
