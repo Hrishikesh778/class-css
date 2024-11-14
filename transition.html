@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: aquamarine;
+            overflow: hidden;
+            /* transition-duration: 2s; */
+            /* transition-property: width, height; */
+            /* transition-property: all; */
+            /* transition-delay: 2s; */
+            /* transition-timing-function: steps(7); */
+        }
+
+        /* .box:hover{
+            width:300px;
+            height: 300px;
+        } */
+
+        .box img {
+            height: 100%;
+            width: 100%;
+            transition-duration: 2s;
+            transition-property: all;
+        }
+
+        .box img:hover{
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="/images/minicop.jpg" alt="">
+
+    </div>
+</body>
+
+</html>
