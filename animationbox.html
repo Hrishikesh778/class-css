@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: aquamarine;
+            animation-name: hrishi;
+            position: absolute;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            /* animation-direction:alternate; */
+            transition: 1s;
+        }
+
+        @keyframes hrishi {
+            /* from {
+                top: 0px;
+                left: 0px;
+            }
+
+            to {
+                top: 0px;
+                left: 300px;
+            } */
+
+            0%{
+                top: 0px;
+                left: 0px;
+                background-color: aquamarine;
+            }
+            25%{
+                top: 0px;
+                left: 300px;
+                background-color: blue;
+            }
+            50%{
+                top: 300px;
+                left: 300px;
+                background-color: blueviolet;
+            }
+            75%{
+                top: 300px;
+                left: 0px;
+                background-color: brown;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+</body>
+
+</html>

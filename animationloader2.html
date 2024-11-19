@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pp {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .circle{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            /* background-color: aqua; */
+            border: 6px solid green;
+            border-bottom: 6px solid white;
+            animation-name: rotatecirle;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            transition:1s ease-in-out;
+        }
+
+        @keyframes rotatecirle {
+            from{
+                transform: rotateZ(0deg);
+                border: 6px solid green;
+                border-bottom: 6px solid white ;
+            }
+            to{
+                transform: rotateZ(360deg);
+                border: 6px solid rgb(188, 8, 8);
+                border-bottom: 6px solid white ;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pp">
+        <div class="circle">
+
+        </div>
+    </div>
+</body>
+
+</html>
